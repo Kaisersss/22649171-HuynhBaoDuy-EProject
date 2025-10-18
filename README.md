@@ -9,23 +9,30 @@ Chạy docker: docker-compose up -d
 Test các chức năng trên POSTMAN
 1/ Register(POST)
 
-<img width="1402" height="849" alt="image" src="https://github.com/user-attachments/assets/cf4e9ff0-1796-4f58-a6e3-a8068c2f8f11" />
+<img width="1411" height="724" alt="image" src="https://github.com/user-attachments/assets/f207e504-0850-48a0-9e4f-ae98794ee2c3" />
 
 2/ Login (POST)
 
-<img width="1411" height="736" alt="image" src="https://github.com/user-attachments/assets/52569c16-3397-4b8e-982a-7c34e64fa290" />
+<img width="1392" height="676" alt="image" src="https://github.com/user-attachments/assets/ff01ba42-7809-4590-8428-aecdda62ccd5" />
 
 token để xem/tạo/đặt hàng sản phẩm
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZjM4ODI1ZjE1NTNmNDk0ZWYyYTdlNiIsImlhdCI6MTc2MDc5MDYwMX0.cGCyTJqb9HGWThxlfEJKdoBjsnXR2Xrimz6Kye6D25M
 
 3/ Create products(POST)
+Nhập token tab Authorization
+<img width="1403" height="447" alt="image" src="https://github.com/user-attachments/assets/30d0207d-d910-435d-b15d-65571421e29f" />
 
-<img width="1393" height="810" alt="image" src="https://github.com/user-attachments/assets/7f9aa4b0-0f9a-4ba9-a6eb-d7ac796c8457" />
+Nhập ở tab Body
+<img width="1406" height="735" alt="image" src="https://github.com/user-attachments/assets/5111627c-a452-4b0e-a86b-0105e5748b75" />
 
 4/Read all products(GET)
+Nhập token tab Authorization
+<img width="1409" height="764" alt="image" src="https://github.com/user-attachments/assets/fd2b247e-e828-4a3b-8630-60e297ab11c7" />
 
-<img width="1415" height="843" alt="image" src="https://github.com/user-attachments/assets/69546439-bced-45e4-bb99-3b21db5723f0" />
 
 5/Order products(POST)
+Nhập token tab Authorization
+<img width="1384" height="414" alt="image" src="https://github.com/user-attachments/assets/42ba69d4-fb4a-4c7e-b1ec-09ece5c2e3ce" />
 
+Tab Body
 <img width="1161" height="763" alt="image" src="https://github.com/user-attachments/assets/5e55e9e6-7709-4067-8546-6b728c2dc794" />
