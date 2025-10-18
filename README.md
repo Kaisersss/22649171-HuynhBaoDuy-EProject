@@ -35,4 +35,5 @@ Nhập token tab Authorization
 <img width="1384" height="414" alt="image" src="https://github.com/user-attachments/assets/42ba69d4-fb4a-4c7e-b1ec-09ece5c2e3ce" />
 
 Tab Body
-<img width="1161" height="763" alt="image" src="https://github.com/user-attachments/assets/5e55e9e6-7709-4067-8546-6b728c2dc794" />
+<img width="1400" height="745" alt="image" src="https://github.com/user-attachments/assets/30a3d286-466e-4b1c-ad25-9215252ac159" />
+
