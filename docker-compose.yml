@@ -1,0 +1,69 @@
+services:
+  mongo:
+    image: mongo:6
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  auth:
+    build: ./auth
+    container_name: auth_service
+    env_file: ./auth/.env
+    depends_on:
+      - mongo
+    ports:
+      - "3000:3000"
+
+  product:
+    build: ./product
+    container_name: product_service
+    env_file: ./product/.env
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      mongo:
+        condition: service_started
+    ports:
+      - "3001:3001"
+
+  order:
+    build: ./order
+    container_name: order_service
+    env_file: ./order/.env
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      mongo:
+        condition: service_started
+    ports:
+      - "3002:3002"
+
+  gateway:
+    build: ./api-gateway
+    container_name: api_gateway
+    depends_on:
+      - auth
+      - product
+      - order
+    ports:
+      - "3003:3003"
+
+volumes:
+  mongo_data:
+  rabbitmq_data:
