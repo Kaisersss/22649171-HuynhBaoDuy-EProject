@@ -7,4 +7,3 @@ yarn-error.log*
 coverage/
 dist/
 tmp/
-docker-compose.yml/
