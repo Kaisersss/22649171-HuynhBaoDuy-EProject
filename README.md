@@ -100,38 +100,44 @@ Hệ thống sử dụng **hai cơ chế giao tiếp chính**:
 Download source code Run npm install Setup all microservices Test all business logic with POSTMAN
 
 Docker compose up --bulid
-`<img width="1303" height="456" alt="image" src="./public/img/1.png" />`
+
+<img width="1411" height="" alt="image" src="./public/img/1.png" />
 
 Chạy docker: docker-compose up -d
 
-`<img width="1392" height="676" alt="image" src="public/img/2.png" />`
+<img width="1411" height="" alt="image" src="./public/img/2.png" />
 
 Test các chức năng trên POSTMAN
 1/ Register(POST)
 
-<img width="1411" height="724" alt="image" src="public/img/3.png" />
+<img width="1411" height="" alt="image" src="./public/img/3.png" />
 
 2/ Login (POST)
 
-<img width="1392" height="676" alt="image" src="public/img/4.png" />
+<img width="1392" height="" alt="image" src="./public/img/4.png" />
 
 token để xem/tạo/đặt hàng sản phẩm
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZjM4ODI1ZjE1NTNmNDk0ZWYyYTdlNiIsImlhdCI6MTc2MDc5MDYwMX0.cGCyTJqb9HGWThxlfEJKdoBjsnXR2Xrimz6Kye6D25M
 
 3/ Create products(POST)
 Nhập token tab Authorization
-`<img width="1403" height="447" alt="image" src="public/img/5.png" />`
+
+<img width="1411" height="" alt="image" src="./public/img/5.png" />
 
 Nhập ở tab Body
-`<img width="1406" height="735" alt="image" src="public/img/6.png" />`
+
+<img width="1411" height="" alt="image" src="./public/img/6.png" />
 
 4/Read all products(GET)
 Nhập token tab Authorization
-`<img width="1409" height="764" alt="image" src="public/img/7.png" />`
+
+<img width="1411" height="" alt="image" src="./public/img/7.png" />
 
 5/Order products(POST)
 Nhập token tab Authorization
-`<img width="1384" height="414" alt="image" src="public/img/8.png" />`
+
+<img width="1411" height="" alt="image" src="./public/img/8.png" />
 
 Tab Body
-`<img width="1400" height="745" alt="image" src="public/img/9.png" />`
+
+<img width="1411" height="" alt="image" src="./public/img/9.png" />
